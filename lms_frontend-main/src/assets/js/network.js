@@ -190,10 +190,10 @@
 					opacity: 1,
 					width: 1,
 				},
-				number: { value: 40 },
+				number: { value: 20 },
 				move: {
 					enable: true,
-					speed: 0.2,
+					speed: 0.5,
 				},
 				opacity: {
 					value: 1,
@@ -220,7 +220,7 @@
 				},
 				stroke: { color: "#21a7e0", width: 1 },
 				size: {
-					value: 20,
+					value: 50,
 					random: true,
 				},
 			},

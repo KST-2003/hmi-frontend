@@ -1,15 +1,17 @@
 import { createRouter,createWebHistory } from "vue-router";
 import Home from '../components/HomeComponent'
-import AboutHmi from '../content/AboutHmi'
-import studentactivity from '../content/StudentActivity'
+import AboutHmi from '../Content/AboutHmi'
+import studentactivity from '../Content/StudentActivity'
 // import newsevent from '../content/NewsEvent'
-import academicprogram from '../content/TwoYearProgram'
+import academicprogram from '../Content/TwoYearProgram'
+import Ojt from '../Content/Ojt'
+import Itpec from '../Content/Itpec'
 // import PostItem from '../content/PostItem'
 
-import News from '../content/NewsComponent'
-import NewsPost from '../content/NewsPost'
-import Event from '../content/EventComponent'
-import CareerOpportunity from '../content/CareerOpportunity'
+import News from '../Content/NewsComponent'
+import NewsPost from '../Content/NewsPost'
+import Event from '../Content/EventComponent'
+import CareerOpportunity from '../Content/CareerOpportunity'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -40,10 +42,6 @@ const router = createRouter({
             name:'Event',
             component: Event,
         },
-        // {
-        //     path: '/News/:id',
-        //     component: NewsPost,
-        // },
         {
             path: '/academicprogram',
             component: academicprogram,
@@ -52,6 +50,14 @@ const router = createRouter({
             path: '/careeroppotunity',
             component: CareerOpportunity,
         },
+        {
+            path: '/ojt',
+            component : Ojt,
+        },
+        {
+            path:'/itpec',
+            component : Itpec,
+        }
     
     ]
 });

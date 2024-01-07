@@ -25,9 +25,9 @@
             HomeComponent,
             FooterComponent
         },
-
         mounted() {
             MyScrollReveal()
+            this.$store.dispatch('getJobs');
 
         }
     }

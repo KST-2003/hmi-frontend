@@ -25,7 +25,7 @@ export default{
            <img :src="require('@/assets/image/world.png')" style="width: 75px; height:auto" width="75px" height="75px" class="mb-3" alt="logo"/> 
            S T</h1>
         <h2 class="header2 revel-left mt-3">MYANMAR INSTITUTE</h2>
-        <span class="sub-header revel-right mt-4 d-block cam-font"><b>for your brighter future and career! 100% Job Guarantee!</b></span>
+        <span class="sub-header revel-right mt-4 d-block cam-font"><b>For your brighter future and career! 100% Job Guarantee!</b></span>
 
         <button class="apply-btn rounded-pill mt-4">Apply Now</button>
       </div>

@@ -8,12 +8,12 @@
 </template>
 
 <script>
-    import ActivityComponent from '@/content/ActivityComponent.vue';
-    import StudentDiversityComponent from '@/content/StudentDiversityComponent.vue';
-    import StudentProgram from '@/content/StudentProgram.vue';
-    import BannerSession from '@/content/BannerSession.vue';
-    import YearProgram from '@/content/YearProgram.vue';
-    import CoreTeam from '@/content/CoreTeam.vue';
+    import ActivityComponent from '@/Content/ActivityComponent.vue';
+    import StudentDiversityComponent from '@/Content/StudentDiversityComponent.vue';
+    import StudentProgram from '@/Content/StudentProgram.vue';
+    import BannerSession from '@/Content/BannerSession.vue';
+    import YearProgram from '@/Content/YearProgram.vue';
+    import CoreTeam from '@/Content/CoreTeam.vue';
 
     // import axios from 'axios'
     export default {
