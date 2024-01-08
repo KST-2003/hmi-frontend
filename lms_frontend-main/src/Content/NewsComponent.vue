@@ -65,6 +65,8 @@
 
 <script>
     import axios from 'axios'
+    import { mapGetters } from 'vuex';
+    
     export default {
         data() {
             return {
@@ -72,17 +74,24 @@
                 name: '',
             }
         },
+        computed : {
+            ...mapGetters(['getPosts']),
+        posts() {  
+            return this.getPosts;
+        },
+        ...mapGetters(['getPostId']),
+        postIds(){
+            return this.getPostId;
+        },
+        foundPost(){
+            return this.getPosts.find(post => post.id === parseInt(this.$route.params.id));
+        }
+        },
         created() {
-            // axios.get('http://127.0.0.1:8000/api/posts').then((res) => {
-            //     // console.log(res.data)
-            //     this.posts = res.data.posts.data;
-            // })
-
             this.name = this.$route.name;
-            axios.get(`http://127.0.0.1:8000/api/posts/mediacategory/${this.name}`).then((res) => {
-                // console.log(res.data.post)
-                this.posts = res.data.post;
-            })
+            // axios.get(`http://127.0.0.1:8000/api/posts/mediacategory/${this.name}`).then((res) => {
+            //     this.posts = res.data.post;
+            // })
 
         },
         methods: {
@@ -107,9 +116,9 @@
         background-color: rgba(184, 184, 184, 0.2);
     }
 
-    /* .card:hover {
+    .card:hover {
         box-shadow: 0 2px 3px 0 rgba(141, 139, 139, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    } */
+    }
 
     .post-title {
         font-size: 1.3rem;

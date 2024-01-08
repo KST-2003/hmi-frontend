@@ -35,7 +35,9 @@ const router = createRouter({
         },
         {
             path: '/News/:id',
+            name: 'NewsPost',
             component: NewsPost,
+            
         },
         {
             path: '/Event',

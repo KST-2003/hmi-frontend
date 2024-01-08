@@ -28,6 +28,8 @@
         mounted() {
             MyScrollReveal()
             this.$store.dispatch('getJobs');
+            this.$store.dispatch('getPosts');
+            // this.$store.dispatch('getPostById');
 
         }
     }

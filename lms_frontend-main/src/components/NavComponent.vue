@@ -51,7 +51,7 @@
                 <!-- <li><a class="dropdown-item" href="#">Events</a></li> -->
                 <div v-for="category in categories.categories" :key="category.id">
                   <li>
-                    <router-link class="dropdown-item" :to="`/News/${category.id}`">{{ category.name }}</router-link>
+                    <router-link class="dropdown-item" :to="`/News`">{{ category.name }}</router-link>
                   </li>
                 </div>
               </ul>

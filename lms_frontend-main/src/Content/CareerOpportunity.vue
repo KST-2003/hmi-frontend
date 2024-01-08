@@ -13,7 +13,13 @@
                     </div>
                     <div>
                         <p class="card-text m-0 g-0" id="ptext_{{ post.id }}">
-                            {{ isExpanded(post.id) ? post.description : truncateText(post.description, 200) }}
+                            <!-- {{ isExpanded(post.id) ? post.description : truncateText(post.description, 200) }} -->
+                        <div v-if="isExpanded(post.id)">
+                            <div v-html="post.description"></div>
+                        </div>
+                        <div v-else>
+                            <div v-html="truncateText(post.description, 200)"></div>
+                        </div>
                         </p>
                         <span class="text-primary" @click="toggleExpansion(post.id)" id="seeMoreBtn">
                             &nbsp;{{ isExpanded(post.id) ? 'hidden...' : 'see more...' }}
